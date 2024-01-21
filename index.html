@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pricing Page</title>
+</head>
+<body>
+    <header>
+        <h1>Pricing Page</h1>
+    </header>
+    <main id="pricing-container" class="container">
+        <section class="pricing-plan" data-usd="10.99" data-eur="9.99" data-inr="799">
+            <h2>Basic Plan</h2>
+            <div class="price" id="basic-price" data-usd="10.99" data-eur="9.99" data-inr="799">$10.99</div>
+            <div class="weight" data-kg="2" data-lb="4.4" data-g="2000" data-oz="70.5">2 kg</div>
+        </section>
+
+        <section class="pricing-plan" data-usd="17.99" data-eur="15.99" data-inr="1299">
+            <h2>Standard Plan</h2>
+            <div class="price" id="standard-price" data-usd="17.99" data-eur="15.99" data-inr="1299">$17.99</div>
+            <div class="weight" data-kg="5" data-lb="11" data-g="5000" data-oz="176.4">5 kg</div>
+        </section>
+
+        <section class="pricing-plan" data-usd="20.99" data-eur="18.99" data-inr="1499">
+            <h2>Premium Plan</h2>
+            <div class="price" id="premium-price" data-usd="20.99" data-eur="18.99" data-inr="1499">$20.99</div>
+            <div class="weight" data-kg="10" data-lb="22" data-g="10000" data-oz="352.8">10 kg</div>
+        </section>
+
+        <!-- Add more pricing plans -->
+
+        <select id="currency-selector" onchange="updateCurrency()">
+            <option value="usd">USD ($)</option>
+            <option value="eur">EUR (€)</option>
+            <option value="inr">INR (₹)</option>
+            <!-- Add more currency options as needed -->
+        </select>
+
+        <select id="unit-selector" onchange="updateUnit()">
+            <option value="kg">Kilograms (kg)</option>
+            <option value="lb">Pounds (lb)</option>
+            <option value="g">Grams (g)</option>
+            <option value="oz">Ounces (oz)</option>
+            <!-- Add more unit options as needed -->
+        </select>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
